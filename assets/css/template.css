@@ -1,0 +1,112 @@
+/**
+ * Project: Congress
+ * Author: codeams@gmail.com
+ */
+
+
+body {
+  min-width: 360px;
+  background-image: url(../images/pattern.png);
+  background-repeat: repeat;
+  background-color: #00234E;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  background-color: #F2F2F2;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+
+.header {
+  height: 145px;
+  padding: 15px 60px 30px;
+  margin-bottom: 30px;
+  background-color: #FAFAFA;
+  /* border-bottom: 1px solid #BF942B; */
+}
+
+.header > .row {
+  width: 100%;
+  height: 100%;
+}
+
+.header .logo {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.header .uady-logo {
+  background-image: url( ../logos/uady-logo.png );
+}
+
+.header .congress-logo {
+  background-image: url( ../logos/congress-logo.png );
+}
+
+
+.content {
+  padding: 0 60px 60px;
+}
+
+
+.section-title {
+  display: block;
+  margin-bottom: 45px;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: normal;
+  color: #00234E;
+  cursor: default;
+}
+
+.section-content {
+  margin-bottom: 30px;
+}
+
+.section-content .text {
+  color: #3B3B3B;
+}
+
+
+.action-buttons {
+
+}
+
+
+.footer {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #F2F2F2;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+@media only screen and ( max-width: 40em ) {
+  .header {
+    height: 100px;
+  }
+
+  .section-title {
+    font-size: 1.5em;
+  }
+
+  .footer {
+    font-size: 0.75em;
+  }
+}

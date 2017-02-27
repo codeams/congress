@@ -1,0 +1,101 @@
+/**
+ * Project: Congress
+ * Author: codeams@gmail.com
+ */
+
+.navigation {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.navigation .section {
+  display:inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-position: center center;
+  border-radius: 50%;
+
+  transition: transform 140ms ease-out, background-color 140ms ease-out;
+}
+
+.section.previous {
+  background-color: #00234E;
+  cursor: pointer;
+}
+
+.section.current {
+  background-color: #005ccc;
+  transform: scale( 1.2 );
+}
+
+.section.previous:hover {
+  transform: scale( 1.1 );
+}
+
+.section.forward {
+  background-color: #CCC;
+}
+
+.section.instructions {
+  background-image: url( ../icons/instructions-icon.svg );
+}
+
+.section.registration-type-selection {
+  background-image: url( ../icons/registration-type-selection-icon.svg );
+}
+
+.section.individual-registration {
+  background-image: url( ../icons/individual-registration-icon.svg );
+}
+
+.section.groupal-registration {
+  background-image: url( ../icons/groupal-registration-icon.svg );
+}
+
+.section.deposit-details-registration {
+  background-image: url( ../icons/deposit-details-registration-icon.svg );
+}
+
+.section.data-corroboration {
+  background-image: url( ../icons/data-corroboration-icon.svg );
+}
+
+.section.voucher-download {
+  background-image: url( ../icons/voucher-download-icon.svg );
+}
+
+.navigation .separator {
+  display: inline-block;
+  width: 30px;
+}
+
+.navigation .congress-title {
+  display: block;
+  font-size: 1.7em;
+  line-height: 40px;
+  color: #00234E;
+  cursor: default;
+}
+
+.navigation .congress-title strong {
+  font-weight: normal;
+  color: #005CCC;
+}
+
+
+/* Small only */
+@media screen and ( max-width: 39.9375em ) {
+  .navigation .congress-title {
+    margin-bottom: 10px;
+  }
+}
+
+/* Medium only */
+@media screen and ( min-width: 40em ) and ( max-width: 63.9375em ) {
+  .navigation .congress-title {
+    margin-bottom: 10px;
+  }
+}
