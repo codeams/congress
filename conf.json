@@ -1,0 +1,14 @@
+{
+  "congress" : {
+    
+  },
+
+  "pipeline" : [
+    "instructions",
+    "registration-type-selection",
+    "individual-registration",
+    "groupal-registration",
+    "data-corroboration",
+    "voucher-download"
+  ]
+}
