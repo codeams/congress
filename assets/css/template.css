@@ -97,6 +97,11 @@ body {
 }
 
 
+.button {
+  margin-bottom: 0;
+}
+
+
 @media only screen and ( max-width: 40em ) {
   .header {
     height: 100px;

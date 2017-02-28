@@ -1,31 +1,23 @@
-<?php
-
-  $section = [
-    'id' => 'choose-registration-type',
-    'name' => 'Selección de tipo de registro',
-    'title' => 'Selecciona un tipo de registro'
-  ];
-
-?><!doctype html>
+<!doctype html>
 <html><head>
 
   <meta charset='utf-8'>
-  <title>Registro al CONISOFT: <?php echo $section['name']; ?></title>
+  <title>Registro al CONISOFT: Precios</title>
 
-  <?php include 'html-segments/stylesheet-links.php'; ?>
+  <?php include 'segments/stylesheet-links.php'; ?>
   <link rel='stylesheet' href='assets/css/prices.css'>
 
 </head><body id='prices'>
 
   <div class='container'>
 
-    <?php include 'html-segments/header.php'; ?>
+    <?php include 'segments/header.php'; ?>
 
-    <?php include 'html-segments/navigation.php'; ?>
+    <?php include 'segments/navigation.php'; ?>
 
     <div class='content'>
 
-      <span class='section-title'><?php echo $section['title']; ?></span>
+      <span class='section-title'>Selección de tipo de registro</span>
 
       <div class='section-content'>
         <div class='registration-types small-up-1 medium-up-2 large-up-3 row'>
@@ -72,8 +64,8 @@
 
   </div>
 
-  <?php include 'html-segments/footer.php'; ?>
+  <?php include 'segments/footer.php'; ?>
 
-  <?php include 'html-segments/script-links.php'; ?>
+  <?php include 'segments/script-links.php'; ?>
 
 </body></html>

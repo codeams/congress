@@ -1,31 +1,23 @@
-<?php
-
-  $section = [
-    'id' => 'instructions',
-    'name' => 'Requerimientos',
-    'title' => 'Requerimientos para el registro'
-  ];
-
-?><!doctype html>
+<!doctype html>
 <html><head>
 
   <meta charset='utf-8'>
-  <title>Registro al CONISOFT: <?php echo $section['name']; ?></title>
+  <title>Registro al CONISOFT: Requisitos</title>
 
-  <?php include 'html-segments/stylesheet-links.php'; ?>
+  <?php include 'segments/stylesheet-links.php'; ?>
   <link rel='stylesheet' href='assets/css/instructions.css'>
 
 </head><body id='instructions'>
 
   <div class='container'>
 
-    <?php include 'html-segments/header.php'; ?>
+    <?php include 'segments/header.php'; ?>
 
-    <?php include 'html-segments/navigation.php'; ?>
+    <?php include 'segments/navigation.php'; ?>
 
     <div class='content'>
 
-      <span class='section-title'><?php echo $section['title']; ?></span>
+      <span class='section-title'>Requisitos previos al registro</span>
 
       <div class='section-content'>
         <div class='text'>
@@ -40,7 +32,7 @@
       <div class='action-buttons row'>
         <div class='small-12 text-center columns'>
           <div class='button large primary'>
-            Continuar
+            Iniciar proceso de registro
           </div>
         </div>
       </div>
@@ -49,8 +41,8 @@
 
   </div>
 
-  <?php include 'html-segments/footer.php'; ?>
+  <?php include 'segments/footer.php'; ?>
 
-  <?php include 'html-segments/script-links.php'; ?>
+  <?php include 'segments/script-links.php'; ?>
 
 </body></html>

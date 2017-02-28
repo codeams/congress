@@ -33,6 +33,10 @@
   transform: scale( 1.05 );
 }
 
+.registration-type:active {
+  transform: scale( 1.15 );
+}
+
 .registration-type.selected {
   transform: scale( 1.15 );
   border-color: green;
