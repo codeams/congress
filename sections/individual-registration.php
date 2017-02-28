@@ -36,6 +36,14 @@
       </div>
     </div>
     <div class='third row'>
+      <div class='text-field-container small-12 columns'>
+        <label>
+          <span>Nombre a plasmar</span>
+          <input type='text' placeholder='Obligatorio' value='' />
+        </label>
+      </div>
+    </div>
+    <div class='fourth row'>
       <div class='text-field-container small-12 medium-3 columns'>
         <label>
           <span>Lada</span>
@@ -55,7 +63,7 @@
         </label>
       </div>
     </div>
-    <div class='fourth align-center row'>
+    <div class='fifth align-center row'>
       <div class='text-field-container small-12 medium-6 columns'>
         <label>
           <span>Correo electrónico</span>
