@@ -31,9 +31,7 @@
 
       <div class='action-buttons row'>
         <div class='small-12 text-center columns'>
-          <div class='button large primary'>
-            Iniciar proceso de registro
-          </div>
+          <input type='button' class='button large primary' value='Iniciar proceso de registro'>
         </div>
       </div>
 
