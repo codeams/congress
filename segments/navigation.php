@@ -7,10 +7,10 @@
   <div class='small-12 large-6 columns-collapsed'>
 
     <span class='previous section instructions'>
-    </span><span class='previous section registration-type-selection'>
-    </span><span class='current section deposit-details-registration'>
-    </span><span class='forward section data-corroboration'>
-    </span><span class='forward section voucher-download'>
+    </span><span class='previous section prices'>
+    </span><span class='current section registration'>
+    </span><span class='forward section validation'>
+    </span><span class='forward section voucher-submission'>
     </span>
 
   </div>

@@ -40,36 +40,23 @@
 }
 
 .section.instructions {
-  background-image: url( ../icons/instructions-icon.svg );
+  background-image: url( ../icons/instructions.svg );
 }
 
-.section.registration-type-selection {
-  background-image: url( ../icons/registration-type-selection-icon.svg );
+.section.prices {
+  background-image: url( ../icons/prices.svg );
 }
 
-.section.individual-registration {
-  background-image: url( ../icons/individual-registration-icon.svg );
+.section.registration {
+  background-image: url( ../icons/registration.svg );
 }
 
-.section.groupal-registration {
-  background-image: url( ../icons/groupal-registration-icon.svg );
+.section.validation {
+  background-image: url( ../icons/validation.svg );
 }
 
-.section.deposit-details-registration {
-  background-image: url( ../icons/deposit-details-registration-icon.svg );
-}
-
-.section.data-corroboration {
-  background-image: url( ../icons/data-corroboration-icon.svg );
-}
-
-.section.voucher-download {
-  background-image: url( ../icons/voucher-download-icon.svg );
-}
-
-.navigation .separator {
-  display: inline-block;
-  width: 30px;
+.section.voucher-submission {
+  background-image: url( ../icons/voucher-submission.svg );
 }
 
 .navigation .congress-title {
