@@ -18,13 +18,14 @@
 }
 
 .registration-form {
-  padding: 45px 0 30px;
+  padding: 20px 0 0;
+  margin-bottom: 30px;
   /* background-color: #FAFAFA; */
 }
 
  .registration-form > .row > .columns {
    position: relative;
-   margin-bottom: 45px;
+   margin-bottom: 5px;
  }
 
  .registration-form > .row:last-of-type > .columns:last-of-type {
@@ -35,18 +36,15 @@
   padding-top: 20px;
 }
 
-.text-field-container label {
-  position: absolute;
-  top: -27px;
-  left: 25px;
+.text-field-container span {
+  padding-left: 15px;
   font-size: 1.1rem;
   color: #00234e;
 }
 
 input[type="text"] {
-  height: 100%;
-  padding-left: 22px;
-  padding-right: 22px;
+  display: block;
+  padding: 30px 15px;
   font-size: 20px;
   color: #00234e;
   opacity: 0.7;

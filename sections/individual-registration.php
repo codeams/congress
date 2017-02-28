@@ -9,42 +9,58 @@
   <div class='registration-form individual-registration'>
     <div class='first row'>
       <div class='text-field-container small-12 medium-6 columns'>
-        <label>Título</label>
-        <input type='text' placeholder='Opcional' value='' />
+        <label>
+          <span>Título</span>
+          <input type='text' placeholder='Opcional' value='' />
+        </label>
       </div>
       <div class='text-field-container small-12 medium-6 columns'>
-        <label>Tipo de participante</label>
-        <input type='text' placeholder='Obligatorio' value='' />
+        <label>
+          <span>Tipo de participante</span>
+          <input type='text' placeholder='Obligatorio' value='' />
+        </label>
       </div>
     </div>
     <div class='second row'>
       <div class='text-field-container small-12 medium-6 columns'>
-        <label>Nombre(s)</label>
-        <input type='text' placeholder='Obligatorio' value='' />
+        <label>
+          <span>Nombre(s)</span>
+          <input type='text' placeholder='Obligatorio' value='' />
+        </label>
       </div>
       <div class='text-field-container small-12 medium-6 columns'>
-        <label>Apellidos</label>
-        <input type='text' placeholder='Obligatorio' value='' />
+        <label>
+          <span>Apellidos</span>
+          <input type='text' placeholder='Obligatorio' value='' />
+        </label>
       </div>
     </div>
     <div class='third row'>
       <div class='text-field-container small-12 medium-3 columns'>
-        <label>Lada</label>
-        <input type='text' placeholder='Obligatorio' value='' />
+        <label>
+          <span>Lada</span>
+          <input type='text' placeholder='Obligatorio' value='' />
+        </label>
       </div>
       <div class='text-field-container small-12 medium-6 columns'>
-        <label>Teléfono</label>
-        <input type='text' placeholder='Obligatorio' value='' />
+        <label>
+          <span>Teléfono</span>
+          <input type='text' placeholder='Obligatorio' value='' />
+        </label>
       </div>
       <div class='text-field-container small-12 medium-3 columns'>
-        <label>Extensión</label>
-        <input type='text' placeholder='Opcional' value='' />
+        <label>
+          <span>Extensión</span>
+          <input type='text' placeholder='Opcional' value='' />
+        </label>
       </div>
     </div>
     <div class='fourth align-center row'>
       <div class='text-field-container small-12 medium-6 columns'>
-        <label>Correo electrónico</label>
-        <input type='text' placeholder='Obligatorio' value='' />
+        <label>
+          <span>Correo electrónico</span>
+          <input type='text' placeholder='Obligatorio' value='' />
+        </label>
       </div>
     </div>
   </div>
