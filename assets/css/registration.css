@@ -76,6 +76,20 @@ input[type="checkbox"] {
   margin-bottom: 0;
 }
 
+.button {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* Small only */
+@media screen and ( max-width: 39.9375em ) {
+  .button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
 /*#groupal-registration .registration-form > .columns {
   margin-bottom: 15px;
 }*/
