@@ -11,7 +11,7 @@
       <div class='text-field-container small-12 medium-6 columns'>
         <label>
           <span>Título</span>
-          <select v-model='degree'>
+          <select v-model='degree' :class='degree ? "" : "default-value"'>
             <option value=''>Obligatorio</option>
             <option value='Dr.'>Doctor</option>
             <option value='Mtro.'>Maestro</option>
@@ -24,7 +24,7 @@
       <div class='text-field-container small-12 medium-6 columns'>
         <label>
           <span>Tipo de participante</span>
-          <select v-model='role'>
+          <select v-model='role' :class='role ? "" : "default-value"'>
             <option value=''>Obligatorio</option>
             <option value='student'>Alumno</option>
             <option value='manager'>Directivo</option>
