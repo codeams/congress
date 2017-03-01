@@ -52,7 +52,7 @@
     <div class='third row'>
       <div class='text-field-container small-12 columns'>
         <label>
-          <span>Nombre tal como será impreso:</span>
+          <span>Nombre tal como será impreso</span>
           <input type='text' v-model.trim='nameAsItWillBePrinted' placeholder='Completado automáticamente' value='' disabled='disabled' />
         </label>
       </div>
