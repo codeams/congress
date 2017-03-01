@@ -11,13 +11,27 @@
       <div class='text-field-container small-12 medium-6 columns'>
         <label>
           <span>Título</span>
-          <input type='text' v-model.trim='degree' placeholder='Opcional' value='' />
+          <select v-model='degree'>
+            <option value=''>Obligatorio</option>
+            <option value='Dr.'>Doctor</option>
+            <option value='Mtro.'>Maestro</option>
+            <option value='Lic.'>Licenciado</option>
+            <option value='Ing.'>Ingeniero</option>
+            <option value='Prof.'>Profesor</option>
+          </select>
         </label>
       </div>
       <div class='text-field-container small-12 medium-6 columns'>
         <label>
           <span>Tipo de participante</span>
-          <input type='text' v-model.trim='role' placeholder='Obligatorio' value='' />
+          <select v-model='role'>
+            <option value=''>Obligatorio</option>
+            <option value='student'>Alumno</option>
+            <option value='manager'>Directivo</option>
+            <option value='speaker'>Ponente</option>
+            <option value='academic'>Académico</option>
+            <option value='other'>Otro</option>
+          </select>
         </label>
       </div>
     </div>
