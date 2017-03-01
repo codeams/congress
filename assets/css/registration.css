@@ -43,6 +43,7 @@
 }
 
 input[type="text"],
+input[type="number"],
 select {
   display: block;
   height: auto;
@@ -62,6 +63,7 @@ select.default-value {
 }
 
 input[type="text"]:focus,
+input[type="number"]:focus,
 select:focus {
   opacity: 1;
 }

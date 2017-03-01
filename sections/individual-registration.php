@@ -30,7 +30,6 @@
             <option value='manager'>Directivo</option>
             <option value='speaker'>Ponente</option>
             <option value='academic'>Académico</option>
-            <option value='other'>Otro</option>
           </select>
         </label>
       </div>
@@ -53,7 +52,7 @@
       <div class='text-field-container small-12 columns'>
         <label>
           <span>Nombre tal como será impreso</span>
-          <input type='text' v-model.trim='nameAsItWillBePrinted' placeholder='Completado automáticamente' value='' disabled='disabled' />
+          <input type='text' v-model.trim='nameAsItWillBePrinted' placeholder='Completado automáticamente' value='' disabled='disabled'>
         </label>
       </div>
     </div>
@@ -61,13 +60,16 @@
       <div class='text-field-container small-12 medium-6 columns'>
         <label>
           <span>Institución</span>
-          <input type='text' v-model.trim='institution' v-on:keyup='validateInstitution()' placeholder='Obligatorio' value='' />
+          <select v-model='institution' @change='validateInstitution' :class='institution ? "" : "default-value"'>
+            <option value=''>Obligatorio</option>
+            <option v-for='currentInstitution in institutionsList'>{{ currentInstitution.name }}</option>
+          </select>
         </label>
       </div>
       <div class='text-field-container small-12 medium-6 columns'>
         <label>
           <span>Facultad</span>
-          <input type='text' v-model.trim='faculty' placeholder='Opcional' value='' :disabled='flags.disableFaculty' />
+          <input type='text' v-model.trim='faculty' :disabled='flags.disableFaculty' placeholder='Opcional'>
         </label>
       </div>
     </div>
@@ -75,19 +77,19 @@
       <div class='text-field-container small-12 medium-3 columns'>
         <label>
           <span>Lada</span>
-          <input type='text' v-model.trim='telephone.areaCode' placeholder='Obligatorio' value='' />
+          <input type='number' v-model.trim.number='telephone.areaCode' placeholder='Obligatorio'>
         </label>
       </div>
       <div class='text-field-container small-12 medium-6 columns'>
         <label>
           <span>Teléfono</span>
-          <input type='text' v-model.trim='telephone.number' placeholder='Obligatorio' value='' />
+          <input type='number' v-model.trim.number='telephone.number' placeholder='Obligatorio'>
         </label>
       </div>
       <div class='text-field-container small-12 medium-3 columns'>
         <label>
           <span>Extensión</span>
-          <input type='text' v-model.trim='telephone.extension' placeholder='Opcional' value='' />
+          <input type='number' v-model.trim.number='telephone.extension' placeholder='Opcional'>
         </label>
       </div>
     </div>
@@ -95,7 +97,7 @@
       <div class='text-field-container small-12 medium-6 columns'>
         <label>
           <span>Correo electrónico</span>
-          <input type='text' v-model.trim='email' placeholder='Obligatorio' value='' />
+          <input type='text' v-model.trim='email' placeholder='Obligatorio'>
         </label>
       </div>
     </div>

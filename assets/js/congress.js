@@ -18,7 +18,18 @@ var individualRegistration = new Vue({
 
     flags: {
       disableFaculty: ''
-    }
+    },
+
+    institutionsList: []
+
+  },
+
+  created: function() {
+    this.$http
+      .get( 'assets/lists/institutions-list.json' )
+        .then( response => {
+          this.institutionsList = response.data;
+        });
   },
 
   computed: {
