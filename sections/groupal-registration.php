@@ -10,39 +10,12 @@
       <div class='text-field-container small-12 columns'>
         <label>
           <span>Nombre completo</span>
-          <input type='text' placeholder='Agregar nuevo miembro' value='Erick Alejandro Montañez Sodá'>
-        </label>
-      </div>
-    </div>
-    <div class='align-center row'>
-      <div class='text-field-container small-12 columns'>
-        <label>
-          <span>Nombre completo</span>
-          <input type='text' placeholder='Agregar nuevo miembro' value='Isis Naomi Ramirez Moleres'>
-        </label>
-      </div>
-    </div>
-    <div class='align-center row'>
-      <div class='text-field-container small-12 columns'>
-        <label>
-          <span>Nombre completo</span>
-          <input type='text' placeholder='Agregar nuevo miembro' value='Daniel Alberto Rejón Pardenilla'>
-        </label>
-      </div>
-    </div>
-    <div class='align-center row'>
-      <div class='text-field-container small-12 columns'>
-        <label>
-          <span>Nombre completo</span>
-          <input type='text' placeholder='Agregar nuevo miembro' value='Cecilia Trejo Sosa'>
-        </label>
-      </div>
-    </div>
-    <div class='align-center row'>
-      <div class='text-field-container small-12 columns'>
-        <label>
-          <span>Nombre completo</span>
-          <input type='text' placeholder='Agregar nuevo miembro' value=''>
+          <input type='text'
+            :id='"groupMember" + index'
+            v-for='(groupMember, index) in groupMembers'
+            v-model='groupMember.name'
+            @keyup.enter='addNewGroupMember($event.target.value)'
+            placeholder='Agregar nuevo miembro'>
         </label>
       </div>
     </div>

@@ -69,3 +69,40 @@ var individualRegistration = new Vue({
   }
 
 })
+
+
+
+
+var groupalRegistration = new Vue({
+
+  el: '.groupal-registration',
+
+  data: {
+    groupMembers: [
+      { name: '' }
+    ]
+  },
+
+  computed: {
+
+  },
+
+  watch: {
+    groupMembers: function( newGroupMember ) {
+
+      var index = this.groupMembers.length - 1;
+
+      Vue.nextTick(function() {
+        document.getElementById( 'groupMember' + index ).focus();
+      });
+
+    }
+  },
+
+  methods: {
+    addNewGroupMember: function( value ) {
+      if ( value ) this.groupMembers.push( { name: '' } );
+    }
+  }
+
+})
