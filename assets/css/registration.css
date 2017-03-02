@@ -69,7 +69,7 @@ select:focus {
   opacity: 1;
 }
 
-.terms-acceptance {
+#terms-acceptance-form {
   margin-bottom: 60px;
 }
 
@@ -103,7 +103,3 @@ input[type="checkbox"] {
     margin: 10px 0;
   }
 }
-
-/*#groupal-registration .registration-form > .columns {
-  margin-bottom: 15px;
-}*/

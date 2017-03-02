@@ -1,65 +1,57 @@
 <!doctype html>
-<html><head>
+<html>
+  <head>
 
-  <meta charset='utf-8'>
-  <title>Registro al CONISOFT</title>
+    <meta charset='utf-8'>
+    <title>Registro al CONISOFT</title>
 
-  <?php include 'segments/stylesheet-links.php'; ?>
-  <link rel='stylesheet' href='assets/css/registration.css'>
+    <?php include 'segments/stylesheet-links.php'; ?>
 
-</head><body id='registration'>
+    <link rel='stylesheet' href='assets/css/registration.css'>
 
-  <div class='container'>
+  </head>
+  <body>
 
-    <?php include 'segments/header.php'; ?>
 
-    <?php include 'segments/navigation.php'; ?>
+    <div id='congress-registration-forms' class='container'>
 
-    <div class='content'>
 
-      <?php include 'sections/individual-registration.php'; ?>
+      <?php include 'segments/header.php'; ?>
 
-      <?php include 'sections/groupal-registration.php'; ?>
 
-      <?php include 'sections/deposit-details-registration.php'; ?>
+      <?php include 'segments/navigation.php'; ?>
 
-      <div class='terms-acceptance'>
-        <div class='row align-center'>
-          <div class='checkbox-container small-12 text-center columns'>
-            <label>
-              <input type='checkbox'>
-              Garantizo la veracidad de los datos proporcionados.
-            </label>
-          </div>
-          <div class='checkbox-container small-12 text-center columns'>
-            <label>
-              <input type='checkbox'>
-              Estoy de acuerdo con los <a href='#'>términos de uso</a>.
-            </label>
-          </div>
-          <div class='checkbox-container small-12 text-center columns'>
-            <label>
-              <input type='checkbox'>
-              He leído el <a href='#'>aviso de privacidad</a>.
-            </label>
-          </div>
-        </div>
+
+      <div class='content'>
+
+        <individual-registration-form></individual-registration-form>
+
+        <group-registration-form></group-registration-form>
+
+        <deposit-details-registration-form></deposit-details-registration-form>
+
+        <terms-acceptance-form></terms-acceptance-form>
+
+        <form-buttons></form-buttons>
+
       </div>
 
-      <div class='action-buttons align-center row'>
-        <div class='button-container small-12 medium-6 text-right columns'>
-          <input type='button' class='button secondary large' value='Cancelar'>
-        </div><div class='button-container small-12 medium-6 text-left columns'>
-          <input type='button' class='button primary large' value='Continuar'>
-        </div>
-      </div>
 
     </div>
 
-  </div>
 
-  <?php include 'segments/footer.php'; ?>
+    <?php include 'segments/footer.php'; ?>
 
-  <?php include 'segments/script-links.php'; ?>
 
-</body></html>
+    <?php include 'segments/script-links.php'; ?>
+
+    <script src='app/components/individual-registration-form.js'></script>
+    <script src='app/components/group-registration-form.js'></script>
+    <script src='app/components/deposit-details-registration-form.js'></script>
+    <script src='app/components/terms-acceptance-form.js'></script>
+    <script src='app/components/form-buttons.js'></script>
+    <script src='app/congress.js'></script>
+
+
+  </body>
+</html>
