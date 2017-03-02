@@ -8,7 +8,7 @@
 <div class='section-content'>
   <div class='registration-form individual-registration'>
     <div class='first row'>
-      <div class='text-field-container small-12 medium-6 columns'>
+      <div class='select-field-container small-12 medium-6 columns'>
         <label>
           <span>Título</span>
           <select v-model='degree' :class='degree ? "" : "default-value"'>
@@ -21,7 +21,7 @@
           </select>
         </label>
       </div>
-      <div class='text-field-container small-12 medium-6 columns'>
+      <div class='select-field-container small-12 medium-6 columns'>
         <label>
           <span>Tipo de participante</span>
           <select v-model='role' :class='role ? "" : "default-value"'>

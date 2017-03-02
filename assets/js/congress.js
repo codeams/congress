@@ -100,9 +100,44 @@ var groupalRegistration = new Vue({
   },
 
   methods: {
-    addNewGroupMember: function( value ) {
-      if ( value ) this.groupMembers.push( { name: '' } );
+    addNewGroupMember: function() {
+      this.groupMembers.push( { name: '' } );
+    },
+    deleteroni: function( target ) {
+      if ( this.groupMembers.length < 2 ) return;
+      if ( ! target.value )
+        this.groupMembers.splice( target.id.split( 'groupMember' )[1], 1 );
     }
+  }
+
+})
+
+var depositDetailsRegistration = new Vue({
+
+  el: '.deposit-details-registration',
+
+  data: {
+    branch: '',
+    city: '',
+    referenceNumber: '',
+    ammount: '',
+    date: {
+      year: '',
+      month: '',
+      day: ''
+    },
+    time: {
+      hour: '',
+      minute: ''
+    }
+  },
+
+  computed: {
+
+  },
+
+  methods: {
+
   }
 
 })

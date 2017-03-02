@@ -36,7 +36,8 @@
   padding-top: 20px;
 }
 
-.text-field-container span {
+.text-field-container span,
+.select-field-container span {
   padding-left: 15px;
   font-size: 1.1rem;
   color: #00234e;

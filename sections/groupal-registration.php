@@ -14,7 +14,8 @@
             :id='"groupMember" + index'
             v-for='(groupMember, index) in groupMembers'
             v-model='groupMember.name'
-            @keyup.enter='addNewGroupMember($event.target.value)'
+            @keyup.enter='addNewGroupMember'
+            @keyup.delete='deleteroni($event.target)'
             placeholder='Agregar nuevo miembro'>
         </label>
       </div>
