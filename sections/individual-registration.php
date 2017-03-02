@@ -10,7 +10,7 @@
     <div class='first row'>
       <div class='select-field-container small-12 medium-6 columns'>
         <label>
-          <span>Título</span>
+          <span>Grado</span>
           <select v-model='degree' :class='degree ? "" : "default-value"'>
             <option value=''>Obligatorio</option>
             <option value='Dr.'>Doctor</option>
@@ -51,22 +51,22 @@
     <div class='third row'>
       <div class='text-field-container small-12 columns'>
         <label>
-          <span>Nombre tal como será impreso</span>
+          <span>Vista previa de nombre tal como será impreso</span>
           <input type='text' v-model.trim='nameAsItWillBePrinted' placeholder='Completado automáticamente' value='' disabled='disabled'>
         </label>
       </div>
     </div>
     <div class='fourth row'>
-      <div class='text-field-container small-12 medium-6 columns'>
+      <div class='text-field-container small-12 medium-7 columns'>
         <label>
-          <span>Institución</span>
+          <span>Universidad / Institución</span>
           <select v-model='institution' @change='validateInstitution' :class='institution ? "" : "default-value"'>
             <option value=''>Obligatorio</option>
             <option v-for='currentInstitution in institutionsList'>{{ currentInstitution.name }}</option>
           </select>
         </label>
       </div>
-      <div class='text-field-container small-12 medium-6 columns'>
+      <div class='text-field-container small-12 medium-5 columns'>
         <label>
           <span>Facultad</span>
           <input type='text' v-model.trim='faculty' :disabled='flags.disableFaculty' placeholder='Opcional'>
@@ -74,27 +74,19 @@
       </div>
     </div>
     <div class='fifth row'>
-      <div class='text-field-container small-12 medium-3 columns'>
-        <label>
-          <span>Lada</span>
-          <input type='number' v-model.trim.number='telephone.areaCode' placeholder='Obligatorio'>
-        </label>
-      </div>
-      <div class='text-field-container small-12 medium-6 columns'>
+      <div class='text-field-container small-12 medium-5 columns'>
         <label>
           <span>Teléfono</span>
           <input type='number' v-model.trim.number='telephone.number' placeholder='Obligatorio'>
         </label>
       </div>
-      <div class='text-field-container small-12 medium-3 columns'>
+      <div class='text-field-container small-12 medium-2 columns'>
         <label>
           <span>Extensión</span>
           <input type='number' v-model.trim.number='telephone.extension' placeholder='Opcional'>
         </label>
       </div>
-    </div>
-    <div class='sixth align-center row'>
-      <div class='text-field-container small-12 medium-6 columns'>
+      <div class='text-field-container small-12 medium-5 columns'>
         <label>
           <span>Correo electrónico</span>
           <input type='text' v-model.trim='email' placeholder='Obligatorio'>

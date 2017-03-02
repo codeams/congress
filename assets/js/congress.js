@@ -10,7 +10,6 @@ var individualRegistration = new Vue({
     institution: '',
     faculty: '',
     telephone: {
-      areaCode: '',
       number: '',
       extension: ''
     },
