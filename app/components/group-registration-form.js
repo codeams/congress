@@ -3,15 +3,11 @@ Vue.component( 'group-registration-form', {
 
 
   data: function() {
-
     return {
-
       groupMembers: [
         { name: '' }
       ]
-
     }
-
   },
 
 

@@ -4,7 +4,6 @@ Vue.component( 'deposit-details-registration-form', {
   data: function() {
 
     return {
-
       branch: '',
       city: '',
       referenceNumber: '',
@@ -20,7 +19,6 @@ Vue.component( 'deposit-details-registration-form', {
         hour: '',
         minute: ''
       }
-
     }
 
   },

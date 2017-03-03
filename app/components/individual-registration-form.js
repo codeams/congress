@@ -5,7 +5,6 @@ Vue.component( 'individual-registration-form', {
   data: function() {
 
     return {
-
       degree: '',
       role: '',
       firstName: '',
@@ -23,7 +22,6 @@ Vue.component( 'individual-registration-form', {
       flags: {
         disableFaculty: ''
       }
-
     }
 
   },
