@@ -1,2 +1,3 @@
 <?php
-  include 'instructions.php';
+
+  include 'congress.php';

@@ -120,7 +120,7 @@ Vue.component( 'individual-registration-form', {
     <div id='individual-registration-form'>
 
 
-      <div class='row align-center'>
+      <div class='row'>
 
         <div class='small-12 columns'>
 

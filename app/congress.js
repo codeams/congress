@@ -1,3 +1,10 @@
+
 new Vue({
-  el : '#congress-registration-forms'
-});
+
+  el : '#congress',
+
+  data: {
+    currentView : 'prices-selection'
+  }
+
+})

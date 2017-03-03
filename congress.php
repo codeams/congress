@@ -11,12 +11,13 @@
     <link rel='stylesheet' href='assets/css/template.css'>
     <link rel='stylesheet' href='assets/css/navigation.css'>
 
-    <link rel='stylesheet' href='assets/css/registration.css'>
+    <link v-if='currentView === "registration"' rel='stylesheet' href='assets/css/registration.css'>
+    <link v-if='currentView === "prices-selection"' rel='stylesheet' href='assets/css/prices.css'>
 
   </head>
   <body>
 
-    <div id='congress-registration-forms' class='container'>
+    <div id='congress' class='container'>
 
       <div class='header'>
 
@@ -44,15 +45,7 @@
 
       <div class='content'>
 
-        <individual-registration-form></individual-registration-form>
-
-        <group-registration-form></group-registration-form>
-
-        <deposit-details-registration-form></deposit-details-registration-form>
-
-        <terms-acceptance-form></terms-acceptance-form>
-
-        <form-buttons></form-buttons>
+        <component :is='currentView'></registration>
 
       </div>
 
@@ -75,11 +68,16 @@
     <script src='vendor/vue-resource.js'></script>
 
     <script src='app/components/section-navigation.js'></script>
-    <script src='app/components/individual-registration-form.js'></script>
-    <script src='app/components/group-registration-form.js'></script>
-    <script src='app/components/deposit-details-registration-form.js'></script>
-    <script src='app/components/terms-acceptance-form.js'></script>
-    <script src='app/components/form-buttons.js'></script>
+
+    <script src='app/components/registration/individual-registration-form.js'></script>
+    <script src='app/components/registration/group-registration-form.js'></script>
+    <script src='app/components/registration/deposit-details-registration-form.js'></script>
+    <script src='app/components/registration/terms-acceptance-form.js'></script>
+    <script src='app/components/registration/form-buttons.js'></script>
+
+    <script src='app/prices-selection.js'></script>
+
+    <script src='app/components/registration.js'></script>
     <script src='app/congress.js'></script>
 
   </body>
