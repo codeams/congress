@@ -11,8 +11,9 @@
     <link rel='stylesheet' href='assets/css/template.css'>
     <link rel='stylesheet' href='assets/css/navigation.css'>
 
-    <link v-if='currentView === "registration"' rel='stylesheet' href='assets/css/registration.css'>
+    <link v-if='currentView === "instructions"' rel='stylesheet' href='assets/css/instructions.css'>
     <link v-if='currentView === "prices-selection"' rel='stylesheet' href='assets/css/prices.css'>
+    <link v-if='currentView === "registration"' rel='stylesheet' href='assets/css/registration.css'>
 
   </head>
   <body>
@@ -74,6 +75,8 @@
     <script src='app/components/registration/deposit-details-registration-form.js'></script>
     <script src='app/components/registration/terms-acceptance-form.js'></script>
     <script src='app/components/registration/form-buttons.js'></script>
+
+    <script src='app/instructions.js'></script>
 
     <script src='app/prices-selection.js'></script>
 

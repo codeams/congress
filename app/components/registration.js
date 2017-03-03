@@ -3,7 +3,7 @@ Vue.component( 'registration', {
 
   data: function() {
     return {
-      
+
     }
   },
 
@@ -11,19 +11,19 @@ Vue.component( 'registration', {
   template:
 
   `
-  <div id='registration'>
+    <div id='registration'>
 
-    <individual-registration-form></individual-registration-form>
+      <individual-registration-form></individual-registration-form>
 
-    <group-registration-form></group-registration-form>
+      <group-registration-form></group-registration-form>
 
-    <deposit-details-registration-form></deposit-details-registration-form>
+      <deposit-details-registration-form></deposit-details-registration-form>
 
-    <terms-acceptance-form></terms-acceptance-form>
+      <terms-acceptance-form></terms-acceptance-form>
 
-    <form-buttons></form-buttons>
+      <form-buttons></form-buttons>
 
-  </div>
+    </div>
   `
 
 
