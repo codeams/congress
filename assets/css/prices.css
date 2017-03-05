@@ -3,16 +3,16 @@
  * Author: codeams@gmail.com
  */
 
-.section-title {
+#prices-selection .section-title {
   text-align: center;
 }
 
-.section-content {
+#prices-selection .section-content {
   margin-bottom: 0;
 }
 
 .registration-types {
-  
+
 }
 
 .registration-types > .column {

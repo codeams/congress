@@ -3,16 +3,16 @@
  * Author: codeams@gmail.com
  */
 
-.section-title {
+#registration .section-title {
   text-align: left;
   margin-bottom: 5px;
 }
 
-.section-content {
+#registration .section-content {
   margin-bottom: 60px;
 }
 
-.content {
+#registration .content {
   padding-left: 0;
   padding-right: 0;
 }

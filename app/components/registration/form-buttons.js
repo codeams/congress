@@ -10,6 +10,13 @@ Vue.component( 'form-buttons', {
   },
 
 
+  methods: {
+    moveBackwards: function() {
+      Bus.$emit( "backwards" );
+    }
+  },
+
+
   template:
 
   `
@@ -17,10 +24,10 @@ Vue.component( 'form-buttons', {
 
       <div class='button-container small-12 medium-6 text-right columns'>
 
-        <input type='button' class='button secondary large' value='Cancelar'>
+        <input type='button' @click='moveBackwards' class='button secondary large' value='Cancelar'>
 
       </div><div class='button-container small-12 medium-6 text-left columns'>
-      
+
         <input type='button' class='button primary large' value='Continuar'>
 
       </div>

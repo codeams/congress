@@ -27,6 +27,9 @@ Vue.component( 'individual-registration-form', {
   },
 
 
+  props: [ 'title' ],
+
+
   created: function() {
 
     this
@@ -46,6 +49,11 @@ Vue.component( 'individual-registration-form', {
 
           );
 
+  },
+
+
+  beforeDestroy: function() {
+    Bus.$emit( "save", this.degree )
   },
 
 
@@ -124,7 +132,7 @@ Vue.component( 'individual-registration-form', {
 
         <div class='small-12 columns'>
 
-          <span class='section-title'>Responsable de grupo</span>
+          <span class='section-title'>{{ title }}</span>
 
         </div>
 
