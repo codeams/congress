@@ -13,14 +13,14 @@ congress.conf = {
     },
 
     {
-      viewName : "prices-selection",
+      viewName : "prices-grid",
       prepare : function() {
         this.params = {}
       }
     },
 
     {
-      viewName : "registration",
+      viewName : "registration-form",
       prepare : function() {
         this.params = {}
       }

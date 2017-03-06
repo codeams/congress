@@ -1,5 +1,5 @@
 
-Vue.component( 'prices-selection', {
+Vue.component( 'prices-grid', {
 
   data: function() {
     return {}

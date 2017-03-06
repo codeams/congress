@@ -1,5 +1,5 @@
 
-Vue.component( 'registration', {
+Vue.component( 'registration-form', {
 
   data: function() {
     return {}
