@@ -2,18 +2,11 @@
 Vue.component( 'registration', {
 
   data: function() {
-    return {
-
-    }
+    return {}
   },
 
 
   props: [ 'params' ],
-
-
-  created: function() {
-    console.log( this.params );
-  },
 
 
   template:
@@ -29,7 +22,7 @@ Vue.component( 'registration', {
 
       <terms-acceptance-form></terms-acceptance-form>
 
-      <form-buttons></form-buttons>
+      <nav-buttons showPrevButton='true' showNextButton='true'></nav-buttons>
 
     </div>
   `

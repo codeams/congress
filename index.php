@@ -1,3 +1,3 @@
 <?php
 
-  include 'congress.php';
+  include 'congress.html';

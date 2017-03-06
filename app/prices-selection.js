@@ -2,9 +2,7 @@
 Vue.component( 'prices-selection', {
 
   data: function() {
-    return {
-
-    }
+    return {}
   },
 
   methods : {
@@ -19,10 +17,12 @@ Vue.component( 'prices-selection', {
     <div id='prices-selection'>
       <span class='section-title'>Selección de tipo de registro</span>
 
-      <div id='0' @click='next' class='section-content'>
+      <div class='section-content'>
+
         <div class='registration-types small-up-1 medium-up-2 large-up-3 row'>
+
           <div class='column'>
-            <div class='registration-type'>
+            <div @click='next' class='registration-type'>
               <span class='type-price'>$ 0</span>
               <span class='type-name'>Alumno de UADY</span>
             </div>
@@ -57,8 +57,11 @@ Vue.component( 'prices-selection', {
               <span class='type-name'>Académico de universidad</span>
             </div>
           </div>
+
         </div>
+
       </div>
+
     </div>
   `
 

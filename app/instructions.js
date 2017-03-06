@@ -54,12 +54,7 @@ Vue.component( 'instructions', {
 
         <div class='small-12 text-center columns'>
 
-          <input
-            type='button'
-            @click='next'
-            class='button large primary'
-            value='Iniciar proceso de registro'
-          >
+          <nav-buttons showNextButton='true'></nav-buttons>
 
         </div>
 
