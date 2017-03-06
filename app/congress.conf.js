@@ -7,32 +7,23 @@ congress.conf = {
 
     {
       viewName : "instructions",
-
-      prepareParams : function() { },
-      movingForwards : function() { },
-      movingBackwards : function() { }
+      prepare : function() {
+        this.params = {}
+      }
     },
 
     {
       viewName : "prices-selection",
-
-      prepareParams : function() { },
-      movingForwards : function( params ) {
-        this.registrationType = params[ "registrationType" ];
-      },
-      movingBackwards : function() { }
+      prepare : function() {
+        this.params = {}
+      }
     },
 
     {
       viewName : "registration",
-
-      prepareParams : function() {
-        this.params = { "toPrint" : "Works." }
-      },
-      movingForwards : function( params ) {
-        this.collectedData = params[ "collectedData" ];
-      },
-      movingBackwards : function() { }
+      prepare : function() {
+        this.params = {}
+      }
     }
 
   ]

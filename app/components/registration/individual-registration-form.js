@@ -132,7 +132,7 @@ Vue.component( 'individual-registration-form', {
 
         <div class='small-12 columns'>
 
-          <span class='section-title'>{{ title }}</span>
+          <span class='section-title'>Responsable de grupo</span>
 
         </div>
 

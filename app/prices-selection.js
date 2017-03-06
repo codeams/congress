@@ -8,8 +8,8 @@ Vue.component( 'prices-selection', {
   },
 
   methods : {
-    moveToRegistration : function( registrationTypeId ) {
-      Bus.$emit( 'forwards', registrationTypeId )
+    next : function() {
+      Bus.$emit( 'next' )
     }
   },
 
@@ -19,7 +19,7 @@ Vue.component( 'prices-selection', {
     <div id='prices-selection'>
       <span class='section-title'>Selección de tipo de registro</span>
 
-      <div id='0' @click='moveToRegistration($event.target.id)' class='section-content'>
+      <div id='0' @click='next' class='section-content'>
         <div class='registration-types small-up-1 medium-up-2 large-up-3 row'>
           <div class='column'>
             <div class='registration-type'>

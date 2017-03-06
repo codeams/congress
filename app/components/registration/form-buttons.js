@@ -11,8 +11,8 @@ Vue.component( 'form-buttons', {
 
 
   methods: {
-    moveBackwards: function() {
-      Bus.$emit( "backwards" );
+    prev: function() {
+      Bus.$emit( "prev" );
     }
   },
 
@@ -24,7 +24,7 @@ Vue.component( 'form-buttons', {
 
       <div class='button-container small-12 medium-6 text-right columns'>
 
-        <input type='button' @click='moveBackwards' class='button secondary large' value='Cancelar'>
+        <input type='button' @click='prev' class='button secondary large' value='Cancelar'>
 
       </div><div class='button-container small-12 medium-6 text-left columns'>
 

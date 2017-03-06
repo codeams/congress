@@ -10,8 +10,8 @@ Vue.component( 'instructions', {
 
 
   methods: {
-    changeView: function() {
-      Bus.$emit( "forwards" )
+    next: function() {
+      Bus.$emit( "next" )
     }
   },
 
@@ -56,7 +56,7 @@ Vue.component( 'instructions', {
 
           <input
             type='button'
-            @click='changeView'
+            @click='next'
             class='button large primary'
             value='Iniciar proceso de registro'
           >
