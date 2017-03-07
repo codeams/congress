@@ -3,9 +3,7 @@ Vue.component( 'instructions', {
 
 
   data: function() {
-    return {
-
-    }
+    return {}
   },
 
 
