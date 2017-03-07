@@ -57,7 +57,7 @@ Vue.component( 'deposit-details-registration-form', {
                 <input
                   type = 'text'
                   v-model = ' branch '
-                  placeholder = 'Opcional'
+                  placeholder = 'Requerido'
                 >
 
 
@@ -77,7 +77,7 @@ Vue.component( 'deposit-details-registration-form', {
                 <input
                   type = 'text'
                   v-model = ' city '
-                  placeholder = 'Opcional'
+                  placeholder = 'Requerido'
                 >
 
 
