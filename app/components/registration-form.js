@@ -18,7 +18,7 @@ Vue.component( 'registration-form', {
 
       <group-registration-form></group-registration-form>
 
-      <deposit-details-registration-form></deposit-details-registration-form>
+      <deposit-registration-form></deposit-registration-form>
 
       <terms-acceptance-form></terms-acceptance-form>
 

@@ -1,5 +1,5 @@
 
-Vue.component( 'deposit-details-registration-form', {
+Vue.component( 'deposit-registration-form', {
 
   data: function() {
 
@@ -27,7 +27,7 @@ Vue.component( 'deposit-details-registration-form', {
   template:
 
   `
-    <div id='deposit-details-registration-form'>
+    <div id='deposit-registration-form'>
 
       <div class='row align-center'>
 
