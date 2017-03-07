@@ -22,7 +22,7 @@ Vue.component( 'terms-acceptance-form', {
 
       <div class='row align-center'>
 
-        <div class='checkbox-container small-12 text-center columns'>
+        <!-- <div class='checkbox-container small-12 text-center columns'>
 
           <label>
 
@@ -31,10 +31,10 @@ Vue.component( 'terms-acceptance-form', {
 
           </label>
 
-        </div>
+        </div> -->
 
 
-        <div class='checkbox-container small-12 text-center columns'>
+        <!-- <div class='checkbox-container small-12 text-center columns'>
 
           <label>
 
@@ -43,7 +43,7 @@ Vue.component( 'terms-acceptance-form', {
 
           </label>
 
-        </div>
+        </div> -->
 
 
         <div class='checkbox-container small-12 text-center columns'>
@@ -51,7 +51,7 @@ Vue.component( 'terms-acceptance-form', {
           <label>
 
             <input type = 'checkbox' v-model = ' privacyPolicy '>
-            He leído el <a href='#'>aviso de privacidad</a>.
+            He leído y estoy de acuerdo con el <a href='#'>aviso de privacidad</a>.
 
           </label>
 
