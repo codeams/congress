@@ -14,7 +14,7 @@ Vue.component( 'registration-form', {
   `
     <div id='registration'>
 
-      <individual-registration-form :title='params.toPrint'></individual-registration-form>
+      <person-registration-form :title='params.toPrint'></person-registration-form>
 
       <group-registration-form></group-registration-form>
 

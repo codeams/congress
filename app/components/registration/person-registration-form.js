@@ -1,5 +1,5 @@
 
-Vue.component( 'individual-registration-form', {
+Vue.component( 'person-registration-form', {
 
 
   data: function() {
@@ -125,7 +125,7 @@ Vue.component( 'individual-registration-form', {
   template:
 
   `
-    <div id='individual-registration-form'>
+    <div id='person-registration-form'>
 
 
       <div class='row'>
