@@ -7,16 +7,23 @@ Vue.component( 'group-registration-form', {
       groupMembers: [
         { name: '' }
       ]
-    }
+    };
   },
 
+  props: [
+    'params'
+  ],
+
+  created: function() {
+    this.groupMembers = this.params.groupMembers;
+  },
 
   watch: {
 
     groupMembers: function() {
 
-      var lastGroupMemberIndex = this.groupMembers.length - 1;
-      var lastGroupMemberInputId = 'groupMemberInput' + lastGroupMemberIndex;
+     var lastGroupMemberIndex = this.groupMembers.length - 1;
+     var lastGroupMemberInputId = 'groupMemberInput' + lastGroupMemberIndex;
 
       Vue.nextTick(function() {
 
@@ -25,6 +32,8 @@ Vue.component( 'group-registration-form', {
             .focus();
 
       });
+
+      return this.groupMembers;
 
     }
 
@@ -47,11 +56,16 @@ Vue.component( 'group-registration-form', {
       var isInputEmpty = ! target.value;
       if ( isInputEmpty ) {
 
-        var currentGroupMemberInputIndex = target.id.split( 'groupMemberInput' )[1];
+        var currentGroupMemberInputIndex =
+          target.id.split( 'groupMemberInput' )[1];
         this.groupMembers.splice(  currentGroupMemberInputIndex, 1 );
 
       }
 
+    },
+
+    save: function( attributes ) {
+      Bus.$emit( 'save', attributes );
     }
 
   },
@@ -92,17 +106,17 @@ Vue.component( 'group-registration-form', {
 
                   type='text'
 
-                  v-for = ' ( groupMember, groupMemberIndex ) in groupMembers '
+                  v-for='( groupMember, groupMemberIndex ) in groupMembers'
 
-                  v-model = ' groupMember.name '
+                  v-model='groupMember.name'
 
-                  :id = ' "groupMemberInput" + groupMemberIndex '
+                  :id='"groupMemberInput" + groupMemberIndex'
 
-                  @keyup.enter = ' addGroupMember '
+                  @keyup.enter='addGroupMember'
 
-                  @keyup.delete = ' deleteGroupMember( $event.target ) '
+                  @keyup.delete='deleteGroupMember( $event.target )'
 
-                  placeholder = 'Agregar nuevo miembro'
+                  placeholder='Agregar nuevo miembro'
 
                 >
 

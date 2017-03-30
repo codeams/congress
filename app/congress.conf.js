@@ -8,21 +8,23 @@ congress.conf = {
     {
       viewName : "instructions",
       prepare : function() {
-        this.params = {}
+        congress.instance.params = {}
       }
     },
 
     {
       viewName : "prices-grid",
       prepare : function() {
-        this.params = {}
+        congress.instance.params = {}
       }
     },
 
     {
       viewName : "registration-form",
       prepare : function() {
-        this.params = {}
+        congress.instance.params = {
+          groupMembers: congress.instance.groupMembers
+        }
       }
     }
 

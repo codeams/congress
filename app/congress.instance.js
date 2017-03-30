@@ -8,11 +8,39 @@ congress.instance = new Vue({
     collectedData : '',
 
     degree : '',
-
+    groupMembers: [
+      { name: 'Mi chica preferida' }
+    ],
 
     currentView : '',
-    pipeline : congress.conf.pipeline,
-    params : {}
+    params : {},
+
+    pipeline: [
+
+      {
+        viewName : "instructions",
+        prepare : function() {
+          this.params = {}
+        }
+      },
+
+      {
+        viewName : "prices-grid",
+        prepare : function() {
+          this.params = {}
+        }
+      },
+
+      {
+        viewName : "registration-form",
+        prepare : function() {
+          this.params = {
+            groupMembers: congress.instance.groupMembers
+          };
+        }
+      }
+
+    ]
   },
 
 
@@ -50,9 +78,17 @@ congress.instance = new Vue({
     });
 
 
-    Bus.$on( "save", function( degree ) {
-      _this.degree = degree;
-    })
+    // Bus.$on( 'save', function( attributes ) {
+    //
+    //   for ( attributeIndex in attributes ) {
+    //
+    //     if ( _this.hasOwnProperty( attributeIndex ) ) {
+    //       _this[ attributeIndex ] = attributes[ attributeIndex ];
+    //     }
+    //
+    //   }
+    //
+    // })
 
   }
 

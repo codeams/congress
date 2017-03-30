@@ -6,7 +6,11 @@ Vue.component( 'registration-form', {
   },
 
 
-  props: [ 'params' ],
+  props: {
+    params: {
+      required: true
+    }
+  },
 
 
   template:
@@ -14,9 +18,9 @@ Vue.component( 'registration-form', {
   `
     <div id='registration'>
 
-      <person-registration-form :title='params.toPrint'></person-registration-form>
+      <person-registration-form></person-registration-form>
 
-      <group-registration-form></group-registration-form>
+      <group-registration-form :params='params'></group-registration-form>
 
       <deposit-registration-form></deposit-registration-form>
 
